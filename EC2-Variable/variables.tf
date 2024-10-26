@@ -11,7 +11,7 @@ variable "my-instance-type" {
 }
 
 variable "my-key-value" {
-    default = "Devops-Aug"
+    default = "kk"
   
 }
 
