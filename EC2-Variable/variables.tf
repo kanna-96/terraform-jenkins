@@ -35,4 +35,5 @@ variable "my-availabilityzone" {
   
 }
 variable "my-account" {
+default = "acc1"
 }
