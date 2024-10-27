@@ -34,3 +34,6 @@ variable "my-availabilityzone" {
     default = "ap-south-1a"
   
 }
+variable "my-account" {
+default = "arn:aws:iam::651706759502:role/uma-jenkins-role"
+}
