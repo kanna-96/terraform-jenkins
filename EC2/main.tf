@@ -1,10 +1,13 @@
 provider "aws" {
   region = "ap-south-1"
 assume_role {
-role_arn = "arn:aws:iam::651706759502:role/uma-jenkins-role"
-}
+role_arn = var.my-acoount
 }
 
+}
+variable "my-account" {
+default = "asd"
+}
 resource "aws_instance" "terraform-instance-1" {
   ami           = "ami-0dee22c13ea7a9a67"
   instance_type = "t2.micro"
