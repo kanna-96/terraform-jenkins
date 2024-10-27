@@ -1,5 +1,6 @@
 provider "aws" {
   region = "ap-south-1"
+role_arn = "arn:aws:iam::651706759502:role/uma-jenkins-role"
 }
 
 resource "aws_instance" "terraform-instance-1" {
