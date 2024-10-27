@@ -51,8 +51,8 @@ pipeline {
                     // Iterate over each directory
                     directories.each { directory ->
                         // Execute Terraform apply in each directory with confirmation
-                        sh "cd ${directory} && terraform apply -auto-approve tfplan"
-                    }
+                        sh "cd ${directory} && terraform apply -var-file = "variables.acc1.tfvars" --auto-approve tfplan && terraform apply -var-file = "variables.acc2.tfvars" --auto-approve tfplan "
+                   }
                 }
             }
         }
