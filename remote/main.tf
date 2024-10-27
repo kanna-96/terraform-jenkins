@@ -1,6 +1,8 @@
 provider "aws" {
     region = "ap-south-1"
+assume_role {
 role_arn = "arn:aws:iam::651706759502:role/uma-jenkins-role"
+}
 }
 
 resource "aws_s3_bucket" "terraform-bucket" {
